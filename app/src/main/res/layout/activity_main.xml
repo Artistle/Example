@@ -20,14 +20,28 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabIndicatorColor="@color/toolbar_background"
-            app:tabIndicatorHeight="6dp"
-            app:tabSelectedTextColor="@color/colorPrimaryDark"
-            app:tabTextColor="#FFFFFF">
+            android:background="@color/toolbar_background"
+            app:tabInlineLabel="false"
+            app:tabIndicatorHeight="0dp"
+            app:tabSelectedTextColor="@color/tabSelectedItem"
+            app:tabTextColor="#7b7b7b">
 
         </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
 
     <android.support.v4.view.ViewPager
         android:layout_width="wrap_content"
